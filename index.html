@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Switches</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .toggle-container {
+            margin: 0 20px;
+            text-align: center;
+        }
+
+        .toggle-container label {
+            display: block;
+            color: white; /* Ensure the text is white */
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+            margin: 0 auto;
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: red;
+            transition: .4s;
+            border-radius: 34px;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            transition: .4s;
+            border-radius: 50%;
+        }
+
+        input:checked + .slider {
+            background-color: green;
+        }
+
+        input:checked + .slider:before {
+            transform: translateX(26px);
+        }
+
+        @media (max-width: 600px) {
+            .toggle-container {
+                display: block;
+                margin: 10px auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="toggle-container">
+                <label for="happiness">Happiness</label>
+                <label class="switch">
+                    <input type="checkbox" id="happiness">
+                    <span class="slider"></span>
+                </label>
+            </div>
+            <div class="toggle-container">
+                <label for="optimism">Optimism</label>
+                <label class="switch">
+                    <input type="checkbox" id="optimism">
+                    <span class="slider"></span>
+                </label>
+            </div>
+            <div class="toggle-container">
+                <label for="kindness">Kindness</label>
+                <label class="switch">
+                    <input type="checkbox" id="kindness">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="toggle-container">
+                <label for="giving">Giving</label>
+                <label class="switch">
+                    <input type="checkbox" id="giving">
+                    <span class="slider"></span>
+                </label>
+            </div>
+            <div class="toggle-container">
+                <label for="respect">Respect</label>
+                <label class="switch">
+                    <input type="checkbox" id="respect">
+                    <span class="slider"></span>
+                </label>
+            </div>
+            <div class="toggle-container">
+                <label for="ego">Ego</label>
+                <label class="switch">
+                    <input type="checkbox" id="ego">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const switches = document.querySelectorAll('.switch input');
+            const egoSwitch = document.getElementById('ego');
+
+            switches.forEach(sw => {
+                sw.addEventListener('change', () => {
+                    if (sw.id === 'ego') {
+                        if (sw.checked) {
+                            switches.forEach(s => {
+                                if (s.id !== 'ego') {
+                                    s.checked = false;
+                                }
+                            });
+                        }
+                    } else {
+                        if (egoSwitch.checked) {
+                            if (sw.checked) {
+                                setTimeout(() => {
+                                    sw.checked = false;
+                                }, 500); // Change the delay here if needed
+                            }
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
