@@ -1,3 +1,4 @@
+
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -10,10 +11,9 @@
 <br />
 <p align="center">
   <a href="https://github.com/stiliajohny/0xtogglemind">
-    <img src="https://raw.githubusercontent.com/stiliajohny/0xtogglemind/main/.assets/logo.png" alt="Main Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">0xtogglemind</h3>
+  <h3 align="center">0xToggleMind</h3>
 
   <p align="center">
     A toggle interface for switching between virtues and ego in a binary style.
@@ -21,7 +21,7 @@
     <a href="./README.md"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/stiliajohny/0xtogglemind">View Demo</a>
+    <a href="https://indraft.blog/0xToggleMind/">View Demo</a>
     ·
     <a href="https://github.com/stiliajohny/0xtogglemind/issues/new?labels=i%3A+bug&template=1-bug-report.md">Report Bug</a>
     ·
@@ -30,7 +30,6 @@
 </p>
 
 <!-- TABLE OF CONTENTS -->
-
 ## Table of Contents
 
 - [Table of Contents](#table-of-contents)
@@ -47,109 +46,43 @@
 - [Acknowledgements](#acknowledgements)
 
 <!-- ABOUT THE PROJECT -->
-
 ## About The Project
 
-[![0xtogglemind Screen Shot][product-screenshot]](./.assets/screenshot.png)
-
-<!--
-There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need.
-
-Here's why:
-
-- Your time should be focused on creating something amazing. A project that solves a problem and helps others
-- You shouldn't be doing the same tasks over and over like creating a README from scratch
-- You should element DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue.
-
-A list of commonly used resources that I find helpful are listed in the acknowledgements.
--->
 
 ### Built With
 
-<!--
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-
-- [Bootstrap](https://getbootstrap.com)
-- [JQuery](https://jquery.com)
-- [Laravel](https://laravel.com)
--->
-
----
+- Vanilla HTML/CSS/JavaScript
 
 <!-- GETTING STARTED -->
-
 ## Getting Started
-
-<!--
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
--->
 
 ### Prerequisites
 
-<!--
-
-This is an example of how to list things you need to use the software and how to install them.
-
-- npm
-
-```sh
-npm install npm@latest -g
-```
--->
+None required.
 
 ### Installation
 
-<!--
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo:
+   ```sh
+   git clone https://github.com/stiliajohny/0xtogglemind.git
+   ```
 
-```sh
-git clone https://github.com/your_username_/Project-Name.git
-```
-
-3. Install NPM packages
-
-```sh
-npm install
-```
-
-4. Enter your API in `config.js`
-
-```JS
-const API_KEY = 'ENTER YOUR API';
-```
--->
-
----
+2. Open `index.html` in your browser to view the interface.
 
 <!-- USAGE EXAMPLES -->
-
 ## Usage
 
-<!--
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
--->
-
----
+This project is a minimal interface for toggling between different traits with a special interaction for "Ego," which resets other toggles when activated.
 
 <!-- ROADMAP -->
-
 ## Roadmap
 
-See the [open issues](https://github.com/stiliajohny/0xtogglemind/issues) for a list of proposed features (and known issues).
-
----
+See [open issues](https://github.com/stiliajohny/0xtogglemind/issues) for a list of proposed features and known issues.
 
 <!-- CONTRIBUTING -->
-
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+All contributions are welcome! 
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
@@ -157,28 +90,17 @@ Contributions are what make the open source community such an amazing place to b
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
----
-
 <!-- LICENSE -->
-
 ## License
 
 Distributed under the GPLv3 License. See `LICENSE` for more information.
 
 <!-- CONTACT -->
-
 ## Contact
 
-John Stilia - stilia.johny@gmail.com
-
-<!--
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
--->
-
----
+John Stilia - [stilia.johny@gmail.com](mailto:stilia.johny@gmail.com)
 
 <!-- ACKNOWLEDGEMENTS -->
-
 ## Acknowledgements
 
 - [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
@@ -187,8 +109,6 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 - [GitHub Pages](https://pages.github.com)
 
 <!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-
 [contributors-shield]: https://img.shields.io/github/contributors/stiliajohny/0xtogglemind.svg?style=for-the-badge
 [contributors-url]: https://github.com/stiliajohny/0xtogglemind/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/stiliajohny/0xtogglemind.svg?style=for-the-badge
@@ -204,4 +124,3 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 [product-screenshot]: .assets/screenshot.png
 [ask-me-anything]: https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg?style=for-the-badge
 [personal-page]: https://github.com/stiliajohny
-# 0xToggleMind
